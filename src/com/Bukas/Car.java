@@ -49,6 +49,7 @@ public class Car implements Drawable {
         g.fillOval((int)(x + w*0.15),(int)(y + h*0.7),(int)(h*0.4),(int)(h*0.4));
         g.fillOval((int)(x + w*0.7),(int)(y + h*0.7),(int)(h*0.4),(int)(h*0.4));
         g.setColor(new Color(0x34D0D0));
-        g.fillRect((int)(x + w*0.35), (int)(y + h*0.1),(int)(w*0.15),(int)(h*0.25));
+        g.fillRect((int)(x + w*0.33), (int)(y + h*0.1),(int)(w*0.15),(int)(h*0.25));
+        g.fillRect((int)(x + w*0.53), (int)(y + h*0.1),(int)(w*0.12),(int)(h*0.25));
     }
 }
