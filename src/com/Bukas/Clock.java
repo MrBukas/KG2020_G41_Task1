@@ -36,11 +36,11 @@ public class Clock implements Drawable{
         }
 
         int dxMin,dxHour,dyMin,dyHour;
-        double da = 2 * Math.PI / 12;
+        double da = Math.PI / 6;
         dxMin =(int)(x + size * 0.4 * Math.cos(da * mins) / 5);
         dyMin =(int)(y + size * 0.4 * Math.sin(da * mins) / 5);
-        dxHour =(int)(x * Math.cos(da * hours));
-        dyHour =(int)(y * Math.sin(da * hours));
+        dxHour =(int)((x + size/2) + size * Math.cos(da * hours));
+        dyHour =(int)((y + size/2) + size * Math.sin(da * hours));
         g.drawLine(x + size/2,y + size/2 ,dxHour,dyHour);
     }
 }

@@ -1,8 +1,10 @@
 package com.Bukas;
 
+
+
 import java.awt.*;
 
-public class Sun implements Drawable{
+public class Sun implements Drawable {
     Graphics2D g;
     int x0;
     int y0;
